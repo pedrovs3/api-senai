@@ -25,5 +25,5 @@ const app = express();
 // })
 
 app.use((req, res, next) => {
-  req.headers
+  req.headers('Access-Control-Allow-Origin', '*')
 })
