@@ -9,11 +9,15 @@
 
 const express = require('express');
 const cors = require('cors');
+
 const app = express();
-//Importação do middleware com setHeader
+
+// Importação do middleware com req.header (CORS)
 const { globalMiddleware } = require('./src/middlewares/globalMiddleware');
+
 // Importação das rotas da api
 const routes = require('./routes');
+
 // Mandando o express utilizar o cors
 app.use(cors());
 

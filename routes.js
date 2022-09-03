@@ -1,13 +1,10 @@
 const express = require('express');
-const route = express.Router();
 
-//req - recebe dados
-//res - devolve dados
-route.get('/', (req, res, next) => {
-  res.send({
-    title: 'api Test',
-    data: '01/09',
-  });
-});
+const route = express.Router();
+const rootController = require('./src/controllers/rootController');
+
+// Rota padrao da aplicaçao
+route.get('/', rootController.index);
+route.post('/post', rootController.post);
 
 module.exports = route;
