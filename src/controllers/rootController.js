@@ -1,7 +1,7 @@
 // req - recebe dados
 // res - devolve dados
 exports.index = (req, res) => {
-  res.send({
+  res.json({
     title: 'api Test',
     data: '01/09',
   });

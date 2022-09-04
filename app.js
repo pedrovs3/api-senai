@@ -3,7 +3,6 @@
  *
  *  Express - Biblioteca para criar aplicações em node no formato de API
  *  cors - Biblioteca para manipular as permissoes do protocolo HTTP
- *  body-parser - Biblioteca que permite manipular o corpo do protocolo HTTP
  *
  */
 

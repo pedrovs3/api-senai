@@ -1,6 +1,6 @@
-const express = require('express');
+const { Router } = require('express');
 
-const route = express.Router();
+const route = Router();
 const rootController = require('./src/controllers/rootController');
 
 // Rota padrao da aplicaçao
