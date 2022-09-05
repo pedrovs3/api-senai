@@ -17,13 +17,12 @@ const { globalMiddleware } = require('./src/middlewares/globalMiddleware');
 // Importação das rotas da api
 const routes = require('./routes');
 
-// Mandando o express utilizar o cors
-app.use(cors());
-
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use(globalMiddleware);
+// Estabelece que as permissoes serao representadas pelo cors
+app.use(cors());
 app.use(routes);
 
 app.listen(3000, () => {
